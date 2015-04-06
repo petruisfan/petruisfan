@@ -17,6 +17,9 @@
             .when('/step/4', {
                 templateUrl: 'views/step4.html'
             })
+            .when('/step/5', {
+                templateUrl: 'views/step5.html'
+            })
             .otherwise({redirectTo: "/step/1"});
     });
 
