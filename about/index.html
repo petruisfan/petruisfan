@@ -3,32 +3,23 @@
 <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="">
-    <meta name="author" content="">
-    <link rel="shortcut icon" href="assets/ico/favicon.png">
+    <meta name="description" content="Personal page">
+    <meta name="author" content="Petru Isfan">
 
     <title>About me</title>
 
-    <!-- Bootstrap core CSS -->
-    <link href="assets/css/bootstrap.css" rel="stylesheet">
-
-    <!-- Custom styles for this template -->
-    <link href="assets/css/main.css" rel="stylesheet">
-
-    <link rel="stylesheet" href="assets/css/font-awesome.min.css">
-
     <link href='http://fonts.googleapis.com/css?family=Lato:300,400,700,300italic,400italic' rel='stylesheet' type='text/css'>
     <link href='http://fonts.googleapis.com/css?family=Raleway:400,300,700' rel='stylesheet' type='text/css'>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css">
 
-    <script src="assets/js/jquery.min.js"></script>
+    <link href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css" rel="stylesheet">
+
+    <link href="assets/css/main.css" rel="stylesheet">
+
+    <!-- these need to be loaded before the page :( -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
     <script type="text/javascript" src="assets/js/smoothscroll.js"></script>
     <script src="assets/js/Chart.js"></script>
-
-    <!-- HTML5 shim and Respond.js IE8 support of HTML5 elements and media queries -->
-    <!--[if lt IE 9]>
-    <script src="assets/js/html5shiv.js"></script>
-    <script src="assets/js/respond.min.js"></script>
-    <![endif]-->
 </head>
 
 <body data-spy="scroll" data-offset="0" data-target="#nav">
@@ -39,11 +30,11 @@
                 <div class="row">
                     <div class="dropdown">
                         <ul id="nav" class="nav">
-                            <li class="menu-item"><a class="smoothScroll" href="#about" title="About"><i class="icon-user"></i></a></li>
-                            <li class="menu-item"><a class="smoothScroll" href="#resume" title="Resume"><i class="icon-file"></i></a></li>
-                            <li class="menu-item"><a class="smoothScroll" href="#work" title="Work"><i class="icon-briefcase"></i></a></li>
-                            <li class="menu-item"><a class="smoothScroll" href="#skills" title="Skills"><i class="icon-code"></i></a></li>
-                            <li class="menu-item"><a class="smoothScroll" href="#contact" title="Contact"><i class="icon-envelope"></i></a></li>
+                            <li class="menu-item"><a class="smoothScroll" href="#about" title="About"><i class="fa fa-user"></i></a></li>
+                            <li class="menu-item"><a class="smoothScroll" href="#education" title="Education"><i class="fa fa-graduation-cap"></i></a></li>
+                            <li class="menu-item"><a class="smoothScroll" href="#work" title="Work"><i class="fa fa-briefcase"></i></a></li>
+                            <li class="menu-item"><a class="smoothScroll" href="#skills" title="Skills"><i class="fa fa-code"></i></a></li>
+                            <li class="menu-item"><a class="smoothScroll" href="#contact" title="Contact"><i class="fa fa-envelope"></i></a></li>
                         </ul><!--/ uL#nav -->
                     </div><!-- /.dropdown -->
 
@@ -67,27 +58,25 @@
     </div><!--/.#headerwrap -->
 
 
-    <section id="about" name="about"></section>
-    <div id="intro">
-        <div class="container">
-            <div class="row">
-
-                <div class="col-lg-2 col-lg-offset-1">
-                    <h5>ABOUT</h5>
-                </div>
-                <div class="col-lg-6">
-                    <p>I'm a fullstack software developer with 6 years of professional experience. My work varies from frontend development, to backend development, to server administration & configuration, to mobile development. I'm interested in all kinds of software development, but my major focus is developing the web & mobile application that have the power to change people's life and bring happiness to the world.
+    <section id="about" name="about">
+        <div id="intro">
+            <div class="container">
+                <div class="row">
+                    <div class="col-lg-2 col-lg-offset-1">
+                        <h5>ABOUT</h5>
+                    </div>
+                    <div class="col-lg-6">
+                        <p>I'm a fullstack software developer with 6 years of professional experience. My work varies from frontend development, to backend development, to server administration and configuration, to mobile development. I'm interested in all kinds of software development, but my major focus is developing the web and mobile application that have the power to change people's life and bring happiness to the world.</p>
                     </div>
                     <div class="col-lg-3">
-                        <p><a href="https://drive.google.com/file/d/0B26K27AtiNx3N19PcGNxOGNpSU0/view?usp=sharing" target="_blank"><i class="icon-file"></i>DOWNLOAD PDF</a></p>
+                        <p><a href="https://drive.google.com/file/d/0B26K27AtiNx3N19PcGNxOGNpSU0/view?usp=sharing" target="_blank"><i class="fa fa-file"></i>DOWNLOAD PDF</a></p>
                     </div>
-
                 </div><!--/.row -->
             </div><!--/.container -->
         </div><!--/ #intro -->
+    </section>
 
-
-        <section id="resume" name="resume"></section>
+    <section id="education" name="education">
         <!--EDUCATION DESCRIPTION -->
         <div class="container desc">
             <div class="row">
@@ -130,11 +119,11 @@
                 </div>
 
             </div><!--/.row -->
-            <br>
             <hr>
         </div><!--/.container -->
+    </section>
 
-        <section id="work" name="work"></section>
+    <section id="work" name="work">
 
         <!--WORK DESCRIPTION -->
         <div class="container desc">
@@ -206,11 +195,11 @@
                         <div class="col-lg-6">
                             <p>AvoApp <br/>
                                 <a href="https://itunes.apple.com/ro/app/avoapp-dosare-juridice/id1045684702?mt=8" target="_blank">
-                                    <span class="icon-apple"></span>
+                                    <span class="fa fa-apple"></span>
                                     iTunes
                                 </a><br/>
                                 <a href="https://play.google.com/store/apps/details?id=com.webefficient.avoapp.android" target="_blank">
-                                    <span class="icon-android"></span>
+                                    <span class="fa fa-android"></span>
                                     Play
                                 </a>
                             </p>
@@ -310,7 +299,7 @@
                         <div class="col-lg-6">
                             <p>Homefile Admin<br/>
                                 <a href="https://play.google.com/store/apps/details?id=ro.homefile.mobile.admin" target="_blank">
-                                    <span class="icon-android"></span>
+                                    <span class="fa fa-android"></span>
                                     Play
                                 </a><br/>
                             </p>
@@ -401,8 +390,9 @@
             <br>
             <hr>
         </div><!--/.container -->
+    </section>
 
-        <section id="skills" name="skills"></section>
+    <section id="skills" name="skills">
 
         <!--SKILLS DESCRIPTION -->
         <div id="skillswrap">
@@ -639,10 +629,9 @@
                 <br>
             </div><!--/.container -->
         </div><!--/ #skillswrap -->
+    </section>
 
-
-
-        <section id="certifications" name="certifications"></section>
+    <section id="certifications" name="certifications">
         <!--AWARDS DESCRIPTION -->
         <div class="container desc">
             <div class="row">
@@ -660,8 +649,9 @@
             </div><!--/.row -->
             <br>
         </div><!--/.container -->
+    </section>
 
-        <section id="contact" name="contact"></section>
+    <section id="contact" name="contact">
         <!--FOOTER DESCRIPTION -->
         <div id="footwrap">
             <div class="container">
@@ -686,19 +676,15 @@
                     <div class="col-lg-3">
                         <p><sm>SOCIAL LINKS</sm></p>
                         <p>
-                            <a href="https://www.linkedin.com/in/petruisfan" target="_blank"><i class="icon-linkedin"></i></a>
-                            <a href="https://github.com/petruisfan" target="_blank"><i class="icon-github"></i></a>
-                            <a href="https://facebook.com/petru.isfan" target="_blank"><i class="icon-facebook"></i></a>
+                            <a href="https://www.linkedin.com/in/petruisfan" target="_blank"><i class="fa fa-linkedin"></i></a>
+                            <a href="https://github.com/petruisfan" target="_blank"><i class="fa fa-github"></i></a>
+                            <a href="https://facebook.com/petru.isfan" target="_blank"><i class="fa fa-facebook"></i></a>
 
                         </p>
                     </div>
                 </div><!--/.row -->
             </div><!--/.container -->
         </div><!--/ #footer -->
-
-        <!-- Bootstrap core JavaScript
-        ================================================== -->
-        <!-- Placed at the end of the document so the pages load faster -->
-        <script src="assets/js/bootstrap.js"></script>
-    </body>
-    </html>
+    </section>
+</body>
+</html>
