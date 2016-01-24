@@ -142,25 +142,25 @@ a:after {
 
 /* Header Wrap */
 #headerwrap {
-    padding-top: 300px;
-    text-align:center;
-    background: url(../img/header-bg.jpg) no-repeat center center;
-    min-height: 600px;
-    width: 100%;
-    -webkit-background-size: cover;
-    -moz-background-size: cover;
-    -o-background-size: cover;
-    background-size: cover;
-    /*margin-top: 60px;*/
-    /*padding-top:330px;*/
+    /*padding-top: 300px;*/
     /*text-align:center;*/
-    /*background: url(../img/header-bg.jpg) no-repeat center center fixed;*/
+    /*background: url(../img/header-bg.jpg) no-repeat center center;*/
     /*min-height: 600px;*/
     /*width: 100%;*/
     /*-webkit-background-size: cover;*/
     /*-moz-background-size: cover;*/
     /*-o-background-size: cover;*/
     /*background-size: cover;*/
+    margin-top: 60px;
+    padding-top:330px;
+    text-align:center;
+    background: url(../img/header-bg.jpg) no-repeat center center fixed;
+    min-height: 600px;
+    width: 100%;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
 }
 
 #headerwrap h1 {
