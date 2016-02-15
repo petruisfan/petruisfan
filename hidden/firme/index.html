@@ -1,0 +1,54 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Document</title>
+</head>
+<body>
+
+<input type="text" id="cuis">
+<button type="button" name="button" onclick="process()">Procesează</button>
+
+<h3>Rezultat:</h3>
+<div class="output">
+
+</div>
+
+<script src="https://code.jquery.com/jquery-2.2.0.min.js"></script>
+<script type="text/javascript">
+    var process = function() {
+        var cui = $('#cuis').val().split(",");
+
+        $(".output").append("CUI,Nume,Cifra<br/>")
+
+        for (var i = 0 ; i < cui.length; i++) {
+            console.log(cui[i]);
+
+            var title, cifra;
+            var getContent = function(cui) {
+                $.getJSON('http://whateverorigin.org/get?url=' + encodeURIComponent('http://www.firme.info/srl-cui' + cui + '/') + '&callback=?', function(data){
+
+                    var doc = document.implementation.createHTMLDocument("example");
+                    doc.documentElement.innerHTML = data.contents;
+                    var table = doc.getElementsByTagName("table")[0];
+                    if (table) {
+                        var row = table.getElementsByTagName("tr")[0];
+                        if (row) {
+                            var cell = row.getElementsByTagName("td")[1];
+                            if (cell) {
+                                console.log(cell.innerText)
+                                cifra = cell.innerText.replace(",",".");
+                            }
+                        }
+                    }
+                    title = doc.title.split(" - ")[0]
+
+                    $(".output").append(cui + "," + title + "," + cifra + "<br/>")
+                });
+            }
+            getContent(cui[i])
+        }
+    };
+</script>
+</body>
+</html>
